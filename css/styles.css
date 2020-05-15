@@ -6,7 +6,13 @@ body {
     font-family: 'Merriweather' , serif;
     color: rgb(19, 19, 39);
 }
+hr {
+    margin: 0;
+    border: none;
+    color: rgb(19, 19, 39);
+    background-color: white;
 
+}
 h1 {
     font-size: 20px;
     padding: 30px;
@@ -16,6 +22,7 @@ h1 {
 }
 h2 {
     font-size: 20px;
+    padding-top: 15px;
 }
 
 fieldset {
@@ -97,6 +104,13 @@ input[type="submit"] {
 .button {
     text-align: center;
     padding-top: 10px;
+    font-size: 20px;
 }
 
+::placeholder {
+    font-style: italic;
+    text-align: right;
+    padding-right: 5px;
+
+}
 
