@@ -4,4 +4,99 @@
 
 body {
     font-family: 'Merriweather' , serif;
+    color: rgb(19, 19, 39);
 }
+
+h1 {
+    font-size: 20px;
+    padding: 30px;
+    background-color: rgb(19, 19, 39);
+    color: white;
+    margin-top: 0;
+}
+h2 {
+    font-size: 20px;
+}
+
+fieldset {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    background-color: #e8eeef;
+    border: none;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.primary input {
+    width: 100%;
+    font-size: 15px;
+    background-color: #e8eeef;
+    border: none;
+    height: auto;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    outline: 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+.primary select {
+    height: 50px;
+    width: 100%;
+    border: none;
+    background-color: #e8eeef;
+}
+
+
+input[name="zip"] {
+    width: 50%;
+}
+.zip {
+    padding-top: 20px;
+}
+.state {
+    display: block; 
+}
+
+.header {
+    text-align: center;
+}
+.head-par {
+    font-size: 15px;
+    color: rgb(172, 171, 171);
+    padding-bottom: 20px;
+}
+.contact,
+.news {
+    padding: 20px;
+    padding-left: 0;
+    font-size: 20px;
+    font-weight: 900;
+    
+}
+.secondary label {
+    padding: 15px;
+    line-height: 30px;
+}
+input[type="submit"] {
+    width: 90%;
+    color: white;
+    height: 60px;
+    border-radius: 5px;
+    background-color: turquoise;
+}
+.button {
+    text-align: center;
+    padding-top: 10px;
+}
+
+

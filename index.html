@@ -9,22 +9,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header class="header">
             <h1>THE CODE REVIEW</h1>
             <h2>Signup for our newsletter</h2>
-            <p>Get the latest news on how your code is doing right in your inbox</p>
+            <p class="head-par">Get the latest news on how your code is doing right in your inbox</p>
         </header>
     <main>
+        <hr>
         <form>
-            <fieldset>
+            <fieldset class="primary">
                 <div>
-                    <legend>Contact Information</legend>
+                    <legend class="contact">Contact Information</legend>
                     <label for="name">Full Name</label><br>
-                    <input type="text" id="name" name="full_name" required>
+                    <input type="text" id="name" name="full_name" placeholder="Required" required>
                 </div>
                 <div>
                     <label for="email">Email Address</label><br>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="Required" required>
                 </div>
                 <div>
                     <label for="tel">Phone Number</label><br>
@@ -39,8 +40,9 @@
                     <input type="text" id="city" name="city">
                 </div>
                 <div>
-                    <label for="state">State</label><br>
+                    <label class="state" for="state">State</label><br>
                     <select>
+                        <option value="" disabled selected hidden>Choose State</option>
                         <option value="alabama">Alabama</option>
                         <option value="alaska">Alaska</option>
                         <option value="arizona">Arizona</option>
@@ -92,14 +94,14 @@
                         <option value="wyoming">Wyoming</option>
                     </select>
                 </div>
-                <div>
+                <div class="zip">
                     <label for="zip">Zip Code</label><br>
-                    <input type="number" id="zip" name="zip">
+                    <input type="text" id="zip" name="zip">
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="secondary">
                 <div>
-                <legend>Newsletter</legend>
+                <legend class="news">Newsletter</legend>
                 <p>Select the newsletters you would like to receive</p>
                 <input type="checkbox" id="html" value="html" name="html"><label for="html">HTML News</label><br>
                 <input type="checkbox" id="css" value="css" name="css"><label for="css">CSS News</label><br>
@@ -112,7 +114,9 @@
                 <textarea id="topics" name="topics"></textarea>
                 </div>
             </fieldset>
-            <input type="submit" id="submit" value="Sign up" name="submit">
+            <div class="button">
+                <input type="submit" id="submit" value="Sign up" name="submit">
+            </div>
         </form>
     </main>
     <footer>
