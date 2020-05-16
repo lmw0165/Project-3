@@ -30,6 +30,7 @@ fieldset {
     border-right: 0;
     border-bottom: 0;
 }
+
 textarea {
     width: 100%;
     height: 100px;
@@ -90,10 +91,16 @@ input[name="zip"] {
     font-weight: 900;
     
 }
-.secondary label {
+
+.secondary label:not([for="topics"]) {
     padding: 15px;
     line-height: 30px;
 }
+label[for="topics"] {
+    display: block;
+    padding-bottom: 15px;
+}
+
 input[type="submit"] {
     width: 90%;
     color: white;
@@ -113,4 +120,14 @@ input[type="submit"] {
     padding-right: 5px;
 
 }
+input:focus {
+    background-color: lightblue;
+}
 
+@media (min-width: 768px) {
+    .container {
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+}
