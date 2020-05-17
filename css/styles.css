@@ -22,13 +22,33 @@ h1 {
 }
 h2 {
     font-size: 20px;
-    padding-top: 15px;
+    text-align: center;
+}
+.info {
+    padding: 20px;
+    padding-left: 0;
+    font-size: 20px;
+    font-weight: 900;
+}
+.line3 {
+    border: 1px solid black;
+    width: 100%;
+}
+.line1 {
+    border-top: 3px solid black;
+    border-left: 0;
+    border-right: 0;
+    padding: 1px;
+}
+.line2 {
+    border: 1px solid black;
+    border-left: 0;
+    border-right: 0;
+
 }
 
 fieldset {
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
+    border: 0;
 }
 
 textarea {
@@ -44,6 +64,9 @@ footer {
     padding: 10px;
 }
 
+.primary {
+    border-top: 0;
+}
 .primary input {
     width: 100%;
     font-size: 15px;
@@ -61,15 +84,18 @@ footer {
     height: 50px;
     width: 100%;
     border: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
     background-color: #e8eeef;
+    color: rgb(120, 120, 120);
+}
+.primary label {
+    display: inline-block;
 }
 
 
 input[name="zip"] {
     width: 50%;
-}
-.zip {
-    padding-top: 20px;
 }
 .state {
     display: block; 
@@ -91,6 +117,9 @@ input[name="zip"] {
     font-weight: 900;
     
 }
+#zip {
+    width: 50%;
+}
 
 .secondary label:not([for="topics"]) {
     padding: 15px;
@@ -106,7 +135,7 @@ input[type="submit"] {
     color: white;
     height: 60px;
     border-radius: 5px;
-    background-color: turquoise;
+    background-color: rgb(31, 163, 150);
 }
 .button {
     text-align: center;
@@ -120,14 +149,46 @@ input[type="submit"] {
     padding-right: 5px;
 
 }
-input:focus {
-    background-color: lightblue;
+select {
+    border: none;
+    outline: none;
 }
+input:focus,
+select:focus,
+textarea:focus {
+    border: 5px solid lightblue;
+    background-color: rgb(191, 209, 214);
+}
+
+/* Media Queries */
 
 @media (min-width: 768px) {
     .container {
         width: 60%;
         margin: 0 auto;
     }
+    #submit {
+        width: 95%;
+    }
+    #zip {
+        width: 30%;
+    }
+    .primary label {
+        float: left;
+        width: 30%;
+        text-align: left;
+        padding-right: 10px;
+        padding-top: 1em;
+        margin: 5px 0px 5px 0px;
+    }
+    .primary input,
+    .primary select {
+        width: 70%;
+        margin: 5px 0px 5px 0px;
+    }
+    
+    
+
+    
     
 }

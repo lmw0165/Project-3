@@ -15,31 +15,26 @@
             <p class="head-par">Get the latest news on how your code is doing right in your inbox</p>
         </header>
     <main class="container">
-        <hr>
+        <hr class="line1">
+        <hr class="line2">
         <form>
             <fieldset class="primary">
-                <div>
-                    <legend class="contact">Contact Information</legend>
-                    <label for="name">Full Name</label><br>
-                    <input type="text" id="name" name="full_name" placeholder="Required" required>
-                </div>
-                <div>
+                    <legend class="info">Contact Information</legend>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Required" required>
+                
                     <label for="email">Email Address</label><br>
                     <input type="email" id="email" name="email" placeholder="Required" required>
-                </div>
-                <div>
+                
                     <label for="tel">Phone Number</label><br>
                     <input type="tel" id="tel" name="tel" placeholder="Phone #">
-                </div>
-                <div>
+                
                     <label for="address">Street Address</label><br>
                     <input type="text" id="address" name="address" placeholder="Address">
-                </div>
-                <div>
+                
                     <label for="city">City</label><br>
                     <input type="text" id="city" name="city" placeholder="City">
-                </div>
-                <div>
+                
                     <label class="state" for="state_name">State</label><br>
                     <select id="state_name" name="states">
                         <option value="" disabled selected hidden>Choose State</option>
@@ -93,14 +88,13 @@
                         <option value="wisconsin">Wisconsin</option>
                         <option value="wyoming">Wyoming</option>
                     </select>
-                </div>
-                <div class="zip">
+                
                     <label for="zip">Zip Code</label><br>
-                    <input type="text" id="zip" name="zip" placeholder="Zip">
-                </div>
+                    <input type="text" id="zip" name="zipcode" placeholder="Zip">
+                
             </fieldset>
             <fieldset class="secondary">
-                <div>
+            <hr class="line3">
                 <legend class="news">Newsletter</legend>
                 <p>Select the newsletters you would like to receive</p>
                 <input type="checkbox" id="html" value="html" name="check"><label for="html">HTML News</label><br>
@@ -112,7 +106,7 @@
                 <br>
                 <label for="topics">Other topics you'd like to hear about</label>
                 <textarea id="topics" name="topics"></textarea>
-                </div>
+                
             </fieldset>
             <div class="button">
                 <input type="submit" id="submit" value="Sign up" name="submit">
